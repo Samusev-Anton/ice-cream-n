@@ -1,2 +1,27 @@
-@import './common';
-@import './example';
+
+@import './utils/mixin';
+@import './utils/vars';
+@import './utils/placeholders';
+
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+@import './components/menu';
+@import './components/loc-fran-modal';
+@import './components/modal';
+@import './components/scrollbar';
+@import './components/scrolltop';
+@import './components/readmore';
+
+@import './layouts/about';
+@import './layouts/adventages';
+@import './layouts/contacts';
+@import './layouts/footer';
+@import './layouts/gallery';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/reviews';
+
+

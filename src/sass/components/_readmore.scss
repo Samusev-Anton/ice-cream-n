@@ -1,0 +1,165 @@
+.read-more {
+  &-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 105;
+  
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+&-hidden {
+    opacity: 0;
+    pointer-events: none;    
+    transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+&-modal {
+  background-color: var(--bg-main-color);
+  width: 80%;
+  height: 540px;
+  
+  border-radius: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  margin-right: 0;
+  margin-left: 0;
+  padding: 45px 36px;
+
+  @media screen and (min-width: 480px) {
+    width: 376px;
+    height: 533px;
+  }
+  @include tablet {
+    width: 480px;
+    height: 640px;
+    padding: 50px 50px;
+  }
+
+  @include desktop {
+    width: 540px;
+    height: 680px;
+  }
+}
+&-title {
+  font-family: var(--title-font);
+  @include font(400, 28px, 1.15);
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  @include tablet {
+    @include font(null, 34px, null);
+  }
+  @include desktop {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+&-sub-title {
+  font-family: var(--title-font);
+  @include font(400, 24px, 1.17);
+  text-align: center;
+  color: var(--main-dark);
+  margin-bottom: 20px;
+  @media screen and (min-width: 390px) {
+    margin-bottom: 10px;
+    @include font(null, 18px, null);
+  }
+  @include tablet {
+    margin-bottom: 20px;
+    @include font(null, 22px, null);
+  }
+  &::before {
+    @include tablet {
+      content: "";
+      width: 303px;
+      height: 1px;
+      background-color: var(--second-text-color);
+      position: absolute;
+      top: 253px;
+      left: 91px;
+    }
+    @include desktop {
+      width: 380px;
+      top: 292px;
+      left: 79px;
+    }
+  }
+}
+&-text-main {
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  letter-spacing: 0.04em;
+  @include font(500, 12px, null);
+  margin-bottom: 10px;
+  text-align: justify;
+  @include desktop {
+    @include font(null, 14px, null);
+    margin-bottom: 20px;
+  }
+}
+&-text {
+  color: var(--second-text-color);
+  @include font(500, 12, null);
+  margin-bottom: 20px;
+  text-align: justify;
+  @include tablet {
+    margin-bottom: 25px;
+  }
+  @include desktop {
+    margin-bottom: 33px;
+    @include font(null, 14px, null);
+  }
+}
+&-item-title {
+  font-family: var(--title-font);
+  @include font(400, 12px, null);
+  color: var(--accent-color);
+  margin-top: 0;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 390px) {
+    @include font(null, 10px, null);
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  @include tablet {
+    @include font(null, 14px, null);
+    margin-bottom: 3px;
+  }
+  @include desktop {
+    @include font(null, 16px, null);
+  }
+}
+&-item-text {
+  display: none;
+  @media screen and (min-width: 390px) {
+    display: block;
+    @include font(500, 8px, null);
+    color: var(--second-text-color);
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+  @media screen and (min-width: 400px) {
+    @include font(null, 9px, null);
+  }
+  @media screen and (min-width: 440px) {
+    @include font(null, 10px, null);
+  }
+  @include tablet {
+    @include font(500, 12px, null);
+    margin-bottom: 15px;
+  }
+}
+}

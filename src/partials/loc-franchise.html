@@ -1,0 +1,66 @@
+<div class="location-backdrop loc-hidden" data-loc>
+  <div class="location-modal">
+    <button type="button" class="modal__btn modal__close" aria-label="Close locations" data-loc-close>
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/sprite.svg.svg#close"></use>
+      </svg>
+    </button>
+    <p class="franchise__title">Choose your city:</p>
+    <div class="loc-flex">
+      <ul class="location-modal__list list">
+        <li class="location-modal__item">
+          <a href="https://goo.gl/maps/etz9sfRTEH3X3wiJ8" target="_blank" class="location-item__text">Chicago &gt;</a>
+
+        </li>
+        <li class="location-modal__item">
+          <a href="https://goo.gl/maps/UiKqFhzbVUsgKVnNA" target="_blank" class="location-item__text">Los Angeles
+            &gt;</a>
+        </li>
+        <li class="location-modal__item">
+          <a href="https://g.page/central-park-ny?share" target="_blank" class="location-item__text">New York &gt;</a>
+        </li>
+      </ul>
+      <button class="loc-close-btn" type="button" aria-label="Close locations" data-loc-back>
+        &lt; Back to main
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div class="franchise-backdrop franchise-hidden" data-franchise>
+  <div class="franchise-modal">
+    <button type="button" class="modal__btn modal__close" aria-label="Close franchise offer" data-franchise-close>
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/sprite.svg.svg#close"></use>
+      </svg>
+    </button>
+    <p class="franchise__title">Join our team! <span class="franchise__title--uppercase">Now!</span></p>
+    <p class="franchise__text">Fill the form to get franchise conditions.</p>
+
+    <form class="franchise-form">
+      <div class="franchise-form__container">
+        <label class="franchise-input__label" for="user-name">Full name</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="user-name" id="user-name" />
+        </div>
+
+
+
+        <label class="franchise-input__label" for="franchise-loc">Franchise location</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="franchise-loc" id="franchise-loc" />
+        </div>
+
+
+
+        <label class="franchise-input__label" for="franchise-mail">email</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="franchise-mail" id="franchise-mail" />
+        </div>
+      </div>
+      <button class="franchise-submit-btn" type="submit" aria-label="Send form">Send it to me!</button>
+    </form>
+
+  </div>
+</div>

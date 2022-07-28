@@ -1,0 +1,221 @@
+.about {
+  position: relative;
+  background-color: var(--bg-main-color);
+  padding-top: 60px;
+}
+.about__container {
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    position: relative;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    background-image: url(/src/images/milk-about1200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 70%;
+    background-size: auto;
+  }
+}
+.about__above {
+  @include font(null, 18px, 1.6);
+  font-family: var(--title-font);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-dark);
+  margin-bottom: 15px;
+  @media screen and(min-width:768px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  @media screen and(min-width:1200px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
+.about__title {
+  @include font(null, 34px, 1.15);
+  font-family: var(--title-font);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+  @media screen and(min-width:768px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  @media screen and(min-width:1200px) {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+}
+.about__picture {
+  @media screen and(max-width:767px) {
+    width: 320px;
+  }
+}
+.about__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  @media screen and(min-width:768px) {
+    width: 280px;
+  }
+  @media screen and(min-width:768px) {
+    width: 336px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 501px;
+  }
+}
+.about__text--block {
+  @media screen and(max-width :767px) {
+    width: 220px;
+  }
+
+  @media screen and(min-width:768px) {
+    margin-left: 32px;
+    width: 334px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 463px;
+    margin-left: 99px;
+    z-index: 3;
+  }
+}
+.about__block {
+  @media screen and(max-width:767px) {
+    background-image: url(/src/images/milk-about.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 70%;
+    background-size: auto;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about__text {
+  display: block;
+
+  @include font(500, 12px, 1.6);
+  margin-right: auto;
+  z-index: 2;
+  @media screen and(min-width:768px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+  }
+}
+.about__text--one {
+  color: var(--main-text-color);
+  margin-bottom: 40px;
+  @media screen and(min-width:1200px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+  }
+}
+.about__text--two {
+  color: var(--second-text-color);
+  margin-bottom: 10px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 30px;
+  }
+}
+.about__text--trd {
+  color: var(--second-text-color);
+  margin-bottom: 20px;
+  @media screen and(min-width:768px) {
+    margin-bottom: 40px;
+  }
+}
+.about__link {
+  @extend %btn;
+  max-width: 176px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.04;
+  display: flex;
+  justify-content: center;
+  @media screen and(min-width:768px) {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+.about__bg {
+  @media screen and(max-width:767px) {
+    position: absolute;
+    top: 78%;
+    transform: translateY(-75%);
+  }
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+  @media screen and(min-width:1200px) {
+    position: absolute;
+    top: 77%;
+    transform: translateY(-75%);
+    display: block;
+    width: 1200px;
+  }
+}
+.about__bg-img {
+  width: 1200px;
+  @media screen and (max-width: 767px) {
+    width: 280px;
+  }
+}
+
+.link-arrow__icon {
+  margin-left: 10px;
+  width: 4px;
+  height: 8px;
+  fill: black;
+}

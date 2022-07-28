@@ -1,0 +1,43 @@
+#progress {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+#progress-value {
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: var(--bg-main-color);
+    border-radius: 50%;
+    display: grid;
+    color: var(--accent-color);
+}
+
+#progress-value::after {
+    content: url('../images/scrolltotop-img.png');
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    animation: scrollTop 1000ms infinite 1000ms;
+}
+
+@keyframes scrollTop {
+    0% {
+    transform: translateY(0);
+    }
+
+    50% {
+    transform: translateY(-5px);
+    }
+
+    100% {
+    transform: translateY(0);
+    }
+}

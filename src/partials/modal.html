@@ -1,0 +1,194 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button aria-label="close" class="modal__close modal__btn" type="button" data-modal-close>
+      <svg class="modal__close-icon" width="18" height="18">
+        <use href="./images/sprite.svg.svg#close"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <p class="form__title modal__title">Оrder</p>
+      <p class="form__subtitle">choose a dessert</p>
+      <div class="form__dessert modal__type">
+        <label for="ice" class="form-label label"></label>
+        <select class="select" name="ice" id="ice">
+          <option class="option" value="icm">Ice cream</option>
+          <option class="option" value="icf">Ice coffee</option>
+          <option class="option" value="ms">Milkshakes</option>
+        </select>
+        <label for="number" class="form-label label"></label>
+        <input
+          class="input"
+          type="number"
+          name="number"
+          id="number"
+          min="0"
+          max="10"
+          step="1"
+          value="1"
+        />
+      </div>
+      <p class="form__subtitle modal__subtitle">choose a taste</p>
+      <div class="form__dessert modal__taste">
+        <label for="taste" class="form-label label"> </label>
+        <select class="select" name="taste" id="taste">
+          <option class="option" value="v">Vanilla</option>
+          <option class="option" value="ch">Chocolate</option>
+          <option class="option" value="b">Berry</option>
+        </select>
+      </div>
+      <p class="form__text modal__block">add to ice cream</p>
+      <div class="form__object modal__object">
+        <label for="berries" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="berries"
+            id="berries"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >seasonal berries</label
+        >
+        <label for="mint" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="mint"
+            id="mint"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >fresh mint</label
+        >
+        <label for="toping" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="toping"
+            id="toping"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >toping</label
+        >
+      </div>
+      <p class="form__text">add to ice coffee</p>
+      <div class="form__object modal__object">
+        <label for="cream" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="cream"
+            id="cream"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >whipped cream</label
+        >
+        <label for="chocolate" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="chocolate"
+            id="chocolate"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >chocolate</label
+        >
+        <label for="c-toping" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="c-toping"
+            id="c-toping"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >toping</label
+        >
+      </div>
+      <p class="form__text">add to milkshakes</p>
+      <div class="form__object modal__object">
+        <label for="m-cream" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="m-cream"
+            id="m-cream"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >whipped cream</label
+        >
+        <label for="marshmallow" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="marshmallow"
+            id="marshmallow"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >marshmallow</label
+        >
+        <label for="cookie" class="form__label modal__object-label">
+          <input
+            class="checkbox visually-hidden"
+            type="checkbox"
+            name="cookie"
+            id="cookie"
+          />
+          <svg class="checkbox-icon" width="16" height="15">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+          >cookie</label
+        >
+      </div>
+      <p class="form__pretitle modal__contact">Enter your contact details</p>
+      <div class="form__info">
+        <label for="name" class="form__text modal__contact-label">name</label>
+        <input class="form__input input" type="text" name="name" id="name" />
+        <label for="tel" class="form__text modal__contact-label">tel</label>
+        <input class="form__input input" type="text" name="tel" id="tel" />
+        <label for="address" class="form__text modal__contact-label"
+          >address</label
+        >
+        <input
+          class="form__input input"
+          type="text"
+          name="address"
+          id="address"
+        />
+      </div>
+      <p class="form__pretitle modal__contact">Specify payment method</p>
+      <div class="form__payment">
+        <label for="cash" class="form__payment-label"
+          >Cash
+          <input
+            class="form__input radio visually-hidden input"
+            type="radio"
+            name="paid"
+            id="cash"
+            value="cash"
+          />
+          <svg class="radio-icon" width="25" height="25">
+            <use href="./images/sprite.svg.svg#icon-check2"></use>
+          </svg>
+        </label>
+
+        <label for="card" class="form__payment-label"
+          >Credit card
+          <input
+            class="form__input radio visually-hidden input"
+            type="radio"
+            name="paid"
+            id="card"
+            value="card" />
+          <svg class="radio-icon" width="25" height="25">
+            <use href="./images/sprite.svg.svg#icon-check2"></use></svg
+        ></label>
+      </div>
+      <button aria-label="confirm" type="submit" class="modal-confirm btn">Confirm</button>
+    </form>
+  </div>
+</div>

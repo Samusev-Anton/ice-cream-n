@@ -1,0 +1,57 @@
+.adventages {
+  background-color: var(--bg-main-color);
+}
+
+.adventages__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 32px;
+  @include tablet {
+    display: flex;
+    justify-content: left;
+  }
+  @include desktop {
+    justify-content: space-between;
+    grid-gap: 0px;
+  }
+}
+.adventages__item {
+  max-width: 240px;
+  @include tablet {
+    max-width: 140px;
+    @include desktop {
+      max-width: 250px;
+    }
+  }
+}
+
+.adventages__amount {
+  font-family: 'Titan One';
+  color: var(--accent-color);
+  @include font(400, 36px, 1.14);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.adventages__heart::before {
+  content: url('../images/heart.png');
+  margin-bottom: 16px;
+}
+
+.adventages__applase::before {
+  content: url('../images/apples.png');
+  margin-bottom: 16px;
+}
+
+.adventages__milk::before {
+  content: url('../images/milk.png');
+  margin-bottom: 16px;
+}
+
+.adventages__text {
+  @include font(700, 12px, 1.7);
+}
