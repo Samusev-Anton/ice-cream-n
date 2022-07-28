@@ -1,0 +1,2 @@
+var calcScrollValue=function(){var e=document.getElementById("progress"),c=(document.getElementById("progress-value"),document.documentElement.scrollTop),n=document.documentElement.scrollHeight-document.documentElement.clientHeight,o=Math.round(100*c/n);e.style.display=c>100?"grid":"none",e.addEventListener("click",(function(){document.documentElement.scrollTop=0})),e.style.background="conic-gradient(#d41443 ".concat(o,"%, #ffb8ca ").concat(o,"%)")};window.onscroll=calcScrollValue,window.onload=calcScrollValue;
+//# sourceMappingURL=index.3350bc86.js.map
